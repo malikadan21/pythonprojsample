@@ -27,12 +27,12 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t myusername/myapp .
+          docker build -t adan606/myapp .
 
       - name: Run tests
         run: |
-          docker run myusername/myapp python -m unittest discover  # Adjust if necessary
+          docker run adan606/myapp python -m unittest discover  # Adjust if necessary
 
       - name: Push Docker image
         run: |
-          docker push myusername/myapp
+          docker push adan606/myapp
